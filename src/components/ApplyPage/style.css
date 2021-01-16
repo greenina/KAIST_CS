@@ -1,0 +1,41 @@
+.recruit{
+    text-align: center;
+}
+.name-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.studentNum-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.phoneNum-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.email-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.group-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.motive-input{
+    width: 80%;
+    min-height: 500px;
+}
+.submit{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    background: indianred;
+    border-radius: 5px;
+}
