@@ -80,6 +80,7 @@ class Mainpage extends Component {
     render() {
       return (
         <div>
+          
           <Header/>
           <Intro/>
           <EventTitle/>

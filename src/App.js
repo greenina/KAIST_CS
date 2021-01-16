@@ -13,7 +13,7 @@ class App extends Component {
       mode:'visitor'
     }
   }
-  
+    
   getContent(){
     if(this.state.mode === 'visitor') {
       return <BrowserRouter>
@@ -21,7 +21,6 @@ class App extends Component {
                 <Route path="/" exact component={Mainpage}/>
                 <Route path="/members" exact component={Memberpage}/>
                 <Route path="/apply" exact component={Applypage}/>
-                <Redirect path="*" to="/" />
               </Switch>
             </BrowserRouter>
     } else if(this.state.mode === 'visitor_members') {
@@ -31,7 +30,9 @@ class App extends Component {
 
   render() {
     return (
-      this.getContent()
+      <div>
+        {this.getContent()}
+      </div>
       );
   }
 }
