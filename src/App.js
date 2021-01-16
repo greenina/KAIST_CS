@@ -7,11 +7,13 @@ import Members from './components/Memebrs'
 
 function App() {
   return (
+
     <div>
       <Header/>
       <Intro/>
       <Events/>
       <Members/>
+
     </div>
   );
 }
