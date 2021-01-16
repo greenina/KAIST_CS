@@ -3,11 +3,11 @@ import Intro from '../Intro'
 import Events from '../Events'
 import EventTitle from '../EventTitle'
 import Members from '../Memebrs'
-import { Component } from 'react';
+import { Component, Link } from 'react';
 import Extra from '../Extra'
 import Memberpage from '../MemberPage';
 import Applypage from '../ApplyPage';
-import { Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 class Mainpage extends Component {
     constructor(props) {

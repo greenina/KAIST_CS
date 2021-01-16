@@ -1,6 +1,9 @@
 import React from 'react';
 import './style.css'
 import { Link } from 'react-scroll'
+import Loginpage from '../LoginPage';
+import { Route } from 'react-router-dom';
+import { Linking } from 'react-native';
 
 const Header = (props)=>{
     return(
@@ -10,7 +13,7 @@ const Header = (props)=>{
                 <a><Link to="intro" spy={true} smooth={true}>INTRO</Link></a>
                 <a><Link to="eventtitle" spy={true} smooth={true}>EVENTS</Link></a>
                 <a><Link to="members" spy={true} smooth={true}>MEMBERS</Link></a>
-                <a>LOGIN</a>
+                <a><Link>LOGIN</Link></a>
             </nav>
             </div>
             <div className="main">
