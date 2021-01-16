@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Intro from './components/Intro'
 import Events from './components/Events'
 import Members from './components/Memebrs'
+import Extra from './components/Extra'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Intro/>
       <Events/>
       <Members/>
+      <Extra/>
 
     </div>
   );
