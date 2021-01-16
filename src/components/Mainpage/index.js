@@ -2,7 +2,12 @@ import Header from '../Header'
 import Intro from '../Intro'
 import Events from '../Events'
 import EventTitle from '../EventTitle'
+import Members from '../Memebrs'
 import { Component } from 'react';
+import Extra from '../Extra'
+import Memberpage from '../MemberPage';
+import Applypage from '../ApplyPage';
+import { Route, Link } from 'react-router-dom';
 
 class Mainpage extends Component {
     constructor(props) {
@@ -85,12 +90,18 @@ class Mainpage extends Component {
             {this.getContent(3)}
             {this.getContent(4)}
           </div>
-          {/* <Members/>
-          <li><a href="/members" onClick={function(e){
-            e.preventDefault();
-            this.props.onChangeMode('visitor_members');
-          }.bind(this)}>members</a></li>
-          <Extra/> */}
+          <Members/>
+          <ul>
+            <li>
+              <Link to="/members">Members</Link>
+            </li>
+            <li>
+              <Link to="/apply">Apply</Link>
+            </li>
+          </ul>
+          <Route path="/members" component={Memberpage}/>
+          <Route path="/apply" component={Applypage}/>
+          <Extra/>
         </div>
       );
     }
