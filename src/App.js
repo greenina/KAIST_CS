@@ -6,6 +6,8 @@ import Events from './components/Events'
 import Members from './components/Memebrs'
 import { EventSubscriptionVendor } from 'react-native';
 import { Component } from 'react';
+import Extra from './components/Extra'
+
 
 class App extends Component {
   constructor(props) {
@@ -88,12 +90,11 @@ class App extends Component {
           {this.getContent(3)}
           {this.getContent(4)}
         </div>
-  
         <Members/>
+        <Extra/>
       </div>
     );
   }
-
 }
 
 export default App;
