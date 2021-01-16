@@ -3,11 +3,11 @@ import Intro from '../Intro'
 import Events from '../Events'
 import EventTitle from '../EventTitle'
 import Members from '../Memebrs'
-import { Component, Link } from 'react';
+import { Component } from 'react';
 import Extra from '../Extra'
 import Memberpage from '../MemberPage';
 import Applypage from '../ApplyPage';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 class Mainpage extends Component {
     constructor(props) {
@@ -80,6 +80,7 @@ class Mainpage extends Component {
     render() {
       return (
         <div>
+          
           <Header/>
           <Intro/>
           <EventTitle/>

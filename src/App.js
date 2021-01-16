@@ -3,7 +3,6 @@ import { Component } from 'react';
 import Mainpage from './components/Mainpage';
 import Memberpage from './components/MemberPage';
 import Applypage from './components/ApplyPage';
-import Loginpage from './components/LoginPage';
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
@@ -14,7 +13,7 @@ class App extends Component {
       mode:'visitor'
     }
   }
-  
+    
   getContent(){
     if(this.state.mode === 'visitor') {
       return <BrowserRouter>
@@ -31,7 +30,9 @@ class App extends Component {
 
   render() {
     return (
-      this.getContent()
+      <div>
+        {this.getContent()}
+      </div>
       );
   }
 }
