@@ -8,8 +8,8 @@ import image3 from './images/image3.PNG'
 
 const Intro = (props)=>{
     return(
-        <div id="intro" style={{height:500}}>
-            <h1>전산학부 학생회</h1>
+        <div  className="intro" id="intro" style={{height:500}}>
+            {/* <h1>전산학부 학생회</h1> */}
             <div className="fade-container">
                 <Fade >
                     <div className="each-fade">
