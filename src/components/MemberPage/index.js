@@ -1,6 +1,7 @@
-import { Component } from 'react';
+import { Component, useState } from 'react';
 import { View } from 'react-native';
 import MemberLists from '../MemberLists'
+import './style.css'
 
 class MemberPage extends Component {
   constructor(props) {
@@ -58,10 +59,10 @@ class MemberPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="members">
         <h2>Members Page</h2>
         <h2>18학번 집행위원회</h2>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{textAlignVertical: "center",textAlign: "center",flex: 1, flexDirection: 'row'}}>
           {this.getContent(0)}
           {this.getContent(1)}
         </View>

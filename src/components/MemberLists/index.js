@@ -1,11 +1,12 @@
 import React from 'react'
 import { View } from 'react-native';
 import { Component } from 'react';
+import './style.css'
 
 class MemberLists extends Component {
     render() {
         return(
-            <div>
+            <div className="member">
                 <View style={{flex: 1, flexDirection: 'row'}}>
                     <img
                         src={this.props.src}
