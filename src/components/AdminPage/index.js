@@ -1,5 +1,7 @@
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Mainpage from '../Mainpage';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 class AdminPage extends Component {
   constructor(props) {
@@ -9,22 +11,27 @@ class AdminPage extends Component {
     }
   }
 
+  onFormSubmit = e => {
+    e.preventDefault();
+    debugger;
+    this.props.changeState(false);
+  }
+
   render() {
     return (
       <div>
-        <h2>Admin Page</h2>
-            <ul>
-              <li>
-                <Link to="/manage_events">Manage Events</Link>
-              </li>
-              <li>
-                <Link to="/manage_apply">Manage Applier</Link>
-              </li>
-              <li>
-                <Link to="/" onClick={() => window.location.reload(false)}>Log Out</Link>
-              </li>
-            </ul>
-            
+        <form onSubmit={this.onFormSubmit}>
+          <h2>Admin Page</h2>
+          <ul>
+            <li>
+              <Link to="/manage_events">Manage Events</Link>
+            </li>
+            <li>
+              <Link to="/manage_apply">Manage Applier</Link>
+            </li>
+            <button type="submit" >Log out</button>
+          </ul>
+        </form>
       </div>
     );
   }

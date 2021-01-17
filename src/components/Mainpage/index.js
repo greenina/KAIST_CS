@@ -7,7 +7,7 @@ import { Component } from 'react';
 import Extra from '../Extra'
 import Memberpage from '../MemberPage';
 import Applypage from '../ApplyPage';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, Router } from 'react-router-dom';
 import AdminPage from '../AdminPage'
 
 class Mainpage extends Component {
@@ -78,19 +78,18 @@ class Mainpage extends Component {
       return _article;
     }
   
-    changeState = (flag) => {
-      console.log(this.state.mode);
-      if(flag) {
-        this.setState({ mode: 'admin_main' }); }
-      else this.setState({ mode: 'visitor_main' })
-            
-    }
+    // changeState = (flag) => {
+    //   console.log(this.state.mode);
+    //   if(flag) {
+    //     this.setState({ mode: 'admin_main' }); }
+    //   else this.setState({ mode: 'visitor_main' }) 
+    // }
 
     render() {
       return (
         this.state.mode === 'visitor_main'?
           <div>
-            <Header changeState = {this.changeState} />
+            <Header changeState={this.props.changeState} />
             <Intro/>
             <EventTitle/>
             <div style={{height:1200}}>
