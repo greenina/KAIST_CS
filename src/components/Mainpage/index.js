@@ -80,7 +80,10 @@ class Mainpage extends Component {
   
     changeState = (flag) => {
       console.log(this.state.mode);
-      flag? this.setState({ mode: 'admin_main' }) : this.setState({ mode: 'visitor_main' }); 
+      if(flag) {
+        this.setState({ mode: 'admin_main' }); }
+      else this.setState({ mode: 'visitor_main' })
+            
     }
 
     render() {
