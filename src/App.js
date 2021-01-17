@@ -3,6 +3,7 @@ import { Component } from 'react';
 import Mainpage from './components/Mainpage';
 import Memberpage from './components/MemberPage';
 import Applypage from './components/ApplyPage';
+import Adminpage from './components/AdminPage';
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
@@ -23,8 +24,8 @@ class App extends Component {
                 <Route path="/apply" exact component={Applypage}/>
               </Switch>
             </BrowserRouter>
-    } else if(this.state.mode === 'visitor_members') {
-      return <Route path="/members" component={Memberpage} />
+    } else if(this.state.mode === 'admin') {
+      return <Route path="/admin" component={Adminpage} />
     }
   }
 

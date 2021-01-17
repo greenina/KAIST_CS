@@ -8,6 +8,7 @@ import Extra from '../Extra'
 import Memberpage from '../MemberPage';
 import Applypage from '../ApplyPage';
 import { Route, Link } from 'react-router-dom';
+import AdminPage from '../AdminPage'
 
 class Mainpage extends Component {
     constructor(props) {
@@ -77,33 +78,40 @@ class Mainpage extends Component {
       return _article;
     }
   
+    changeState = (flag) => {
+      console.log(this.state.mode);
+      flag? this.setState({ mode: 'admin_main' }) : this.setState({ mode: 'visitor_main' }); 
+    }
+
     render() {
       return (
-        <div>
-          
-          <Header/>
-          <Intro/>
-          <EventTitle/>
-          <div style={{height:1200}}>
-            {this.getContent(0)}
-            {this.getContent(1)}
-            {this.getContent(2)}
-            {this.getContent(3)}
-            {this.getContent(4)}
+        this.state.mode === 'visitor_main'?
+          <div>
+            <Header changeState = {this.changeState} />
+            <Intro/>
+            <EventTitle/>
+            <div style={{height:1200}}>
+              {this.getContent(0)}
+              {this.getContent(1)}
+              {this.getContent(2)}
+              {this.getContent(3)}
+              {this.getContent(4)}
+            </div>
+            <Members/>
+            <ul>
+              <li>
+                <Link to="/members">Members</Link>
+              </li>
+              <li>
+                <Link to="/apply">Apply</Link>
+              </li>
+            </ul>
+            <Route path="/members" component={Memberpage}/>
+            <Route path="/apply" component={Applypage}/>
+            <Extra/>
           </div>
-          <Members/>
-          <ul>
-            <li>
-              <Link to="/members">Members</Link>
-            </li>
-            <li>
-              <Link to="/apply">Apply</Link>
-            </li>
-          </ul>
-          <Route path="/members" component={Memberpage}/>
-          <Route path="/apply" component={Applypage}/>
-          <Extra/>
-        </div>
+        :
+        <AdminPage/>
       );
     }
   }
