@@ -25,6 +25,7 @@
     "react-scroll": "^1.8.1",
     "react-slick": "^0.27.14",
     "react-slideshow-image": "^3.4.3",
+    "save": "^2.4.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
@@ -53,5 +54,4 @@
       "last 1 safari version"
     ]
   }
-  
 }
