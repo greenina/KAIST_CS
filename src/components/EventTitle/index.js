@@ -7,7 +7,7 @@ const EventTitle = (props)=>{
     const [eventInfo, setEventInfo] = useState({});
     useEffect(()=>{
         let umounted = false;
-      axios.get("http://192.249.18.245:8080/event/all").then(
+      axios.get("http://192.249.18.245:8081/event/all").then(
           (res)=>{
             setEventInfo(res.data)
           }

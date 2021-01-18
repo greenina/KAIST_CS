@@ -36,7 +36,7 @@ class App extends Component {
   }
 
   render() {
-    debugger;
+    // debugger;
     return (
       this.getContent() ? 
         <BrowserRouter>

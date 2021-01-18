@@ -12,7 +12,9 @@ class ApplyPage extends Component{
       phoneNum:'',
       email:'',
       group:'',
-      motive:''
+      motive:'',
+      comment:"",
+      pass:false
     }
   }
   changeHandler =(e)=>{
@@ -28,7 +30,7 @@ class ApplyPage extends Component{
     })
   }
   render(){
-    const{name, studentId, phoneNum, email, group, motive} = this.state
+    const{name, studentId, phoneNum, email, group, motive, comment, pass} = this.state
     return(
       <div className="recruit">
         <form onSubmit={this.submitHandler}>
