@@ -92,13 +92,6 @@ class Mainpage extends Component {
             <Header changeState={this.props.changeState} />
             <Intro/>
             <EventTitle />
-            <div style={{height:1200}}>
-              {this.getContent(0)}
-              {this.getContent(1)}
-              {this.getContent(2)}
-              {this.getContent(3)}
-              {this.getContent(4)}
-            </div>
             <Members />
             <ul>
               <li>

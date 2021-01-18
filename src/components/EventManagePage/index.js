@@ -28,7 +28,7 @@ class EventManagePage extends Component {
   submitHandler = (e) =>{
     e.preventDefault();
     console.log(this.state)
-    axios.post('http://192.249.18.241:8080/event/add', this.state)
+    axios.post('http://192.249.18.245:8080/event/add', this.state)
     .then(response=>{console.log(response)})
     .catch(error =>{
       console.log(error)
@@ -39,7 +39,7 @@ class EventManagePage extends Component {
   uploadHandler(event) {
     const data = new FormData();
     data.append('file', event.target.files[0]);
-    axios.post('http://192.249.18.241:8080/event/uploads', data);
+    axios.post('http://192.249.18.245:8080/event/uploads', data);
   }
 
   render() {
