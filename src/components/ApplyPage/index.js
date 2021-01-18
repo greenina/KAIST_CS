@@ -18,15 +18,18 @@ class ApplyPage extends Component{
   changeHandler =(e)=>{
     this.setState({[e.target.name]:e.target.value})
   }
+
   submitHandler = (e) =>{
     e.preventDefault();
     console.log(this.state)
-    axios.post('http://192.249.18.245:8080/appliers/add', this.state)
+    axios.post('http://192.249.18.241:8080/appliers/add', this.state)
     .then(response=>{console.log(response)})
     .catch(error =>{
       console.log(error)
     })
+    
   }
+
   render(){
     const{name, studentId, phoneNum, email, group, motive} = this.state
     return(

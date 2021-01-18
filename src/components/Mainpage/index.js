@@ -69,7 +69,7 @@ class Mainpage extends Component {
         _desc = this.state.events[index].desc;
         _src = this.state.events[index].src;
         _src2 = this.state.events[index].src2;
-        _article = <Events
+        _article = <Events 
                       title={_title}
                       desc={_desc}
                       src={_src}
@@ -91,7 +91,7 @@ class Mainpage extends Component {
           <div>
             <Header changeState={this.props.changeState} />
             <Intro/>
-            <EventTitle/>
+            <EventTitle />
             <div style={{height:1200}}>
               {this.getContent(0)}
               {this.getContent(1)}
@@ -99,7 +99,7 @@ class Mainpage extends Component {
               {this.getContent(3)}
               {this.getContent(4)}
             </div>
-            <Members/>
+            <Members />
             <ul>
               <li>
                 <Link to="/members">Members</Link>
