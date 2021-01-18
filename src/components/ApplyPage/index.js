@@ -22,7 +22,7 @@ class ApplyPage extends Component{
   submitHandler = (e) =>{
     e.preventDefault();
     console.log(this.state)
-    axios.post('http://192.249.18.241:8080/appliers/add', this.state)
+    axios.post('http://192.249.18.245:8080/appliers/add', this.state)
     .then(response=>{console.log(response)})
     .catch(error =>{
       console.log(error)
