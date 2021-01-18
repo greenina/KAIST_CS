@@ -102,7 +102,7 @@ function ApplierView(props){
       })
       console.log(applierInfo);
       return ()=>{umounted= true}
-    })
+    },[])
     return (
       <div className={classes.root}>
         <Grid container spacing={3}>
