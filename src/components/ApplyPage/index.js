@@ -20,6 +20,7 @@ class ApplyPage extends Component{
   changeHandler =(e)=>{
     this.setState({[e.target.name]:e.target.value})
   }
+
   submitHandler = (e) =>{
     e.preventDefault();
     console.log(this.state)
@@ -28,7 +29,9 @@ class ApplyPage extends Component{
     .catch(error =>{
       console.log(error)
     })
+    
   }
+
   render(){
     const{name, studentId, phoneNum, email, group, motive, comment, pass} = this.state
     return(
