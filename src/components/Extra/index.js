@@ -7,7 +7,7 @@ class Extra extends Component{
         const Wrapper = styled.div`
             width: 100%;
             /* 색상 */
-            background: rgba(255,255,255,0.85);
+            background: rgba(251, 250, 252, 0.9);
             box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.20);
         `;
 
