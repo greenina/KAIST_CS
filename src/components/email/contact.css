@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.mailsend_title{
+    font-family: 'Nanum Gothic';
+    text-align: left;
+    font-size: 20px;
+    color: #78727c;
+}
+
+.input-group{
+    
+    font-family: 'Nanum Gothic';
+}

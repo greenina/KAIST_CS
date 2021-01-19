@@ -23,21 +23,21 @@ onClick={this.resetValues}>
 <Field
 name="email"
 type="email"
-label='Email'
+label='이메일 주소'
 className='form-control'
 component={ProjectInput}
 />
 <Field
 name="title"
 type="text"
-label='Title'
+label='제목'
 className='form-control'
 component={ProjectInput}
 />
 <Field
 name="message"
 type="text"
-label='Description'
+label='내용'
 rows='6'
 className='form-control'
 component={ProjectTextArea}
@@ -94,13 +94,13 @@ Send
 const validate = values => {
 const errors = {};
 if (!values.email) {
-errors.email = 'Please enter email!';
+errors.email = '이메일 주소를 입력해주세요';
 }
 if (!values.title) {
-errors.title = 'Please enter title!';
+errors.title = '제목을 입력해주세요';
 }
 if (!values.message) {
-errors.message = 'Please enter message!';
+errors.message = '내용을 입력해주세요';
 }
 return errors;
 }

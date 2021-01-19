@@ -82,13 +82,22 @@
     color: #78727c;
     font-weight: bold;
 }
-.passorfail{
+.ppassorfail{
     padding-top: 10px;
     padding-left: 170px;
     /* padding-left: 500px; */
     font-family: 'Nanum Gothic';
     font-size: 17px;
-    color: #78727c;
+    color: #224272;
+    font-weight: bold;
+}
+.fpassorfail{
+    padding-top: 10px;
+    padding-left: 170px;
+    /* padding-left: 500px; */
+    font-family: 'Nanum Gothic';
+    font-size: 17px;
+    color: #722222;
     font-weight: bold;
 }
 .comment-input{
