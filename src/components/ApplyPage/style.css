@@ -27,31 +27,14 @@
     height: 40px;
     margin: 10px;
 }
-.motive-input{
-    width: 80%;
-    min-height: 500px;
-}
-/* .submit{
-    width: 200px;
-    height: 50px;
-    font-size: 20px;
-    padding: 20px;
-    border: none;
-    background: indianred;
-    border-radius: 5px;
-} */
-.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
-    min-height: 300px;
-    min-width: 500px;
-  }
 
 .format{
     orientation: center;
 }
 
 .title{
-    /* font-family: 'Nanum Gothic';
-    font-weight: bolder; */
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
     padding-top: 15px;
     color: darkblue;
     font-size: 30px;
@@ -63,7 +46,7 @@
 }
 .recruit{
     background: rgb(226, 223, 236);
-    height: 1130px;
+    height: 1300px;
 }
 .blank{
     height: 20px;
@@ -84,9 +67,75 @@
     height: 7px;
 }
 .motive-input{
-    margin-top: 20px;
+    margin-top: 14px;
 }
 .submit{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.name-input{
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
+}
+.studentId-input{
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
+}
+.phoneNum-input{
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
+}
+.email-input{
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
+}
+.group-input{
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
+}
+.motive-input{
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    min-height: 500px;
+}
+.nameq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+}
+.studentIdq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+}
+.phoneNumq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+}
+.emailq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+}
+.groupq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+}
+.motiveq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
 }

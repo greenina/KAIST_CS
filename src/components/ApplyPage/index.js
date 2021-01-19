@@ -58,28 +58,33 @@ class ApplyPage extends Component{
               </Paper>
               <div className="blank1"></div>
               <Paper >
-                <div></div>
-                <input onChange={this.changeHandler}  value={name} name="name" className="name-input" type="text" placeholder="이름"/>
+                <div  align="left" className="nameq">1. 이름</div>
+                <input onChange={this.changeHandler}  value={name} name="name" className="name-input" type="text"/>
               </Paper>
               <div className="blank2"></div>
               <Paper >
-                <input onChange={this.changeHandler} value={studentId}name="studentId"className="studentId-input" type="text" placeholder="학번(예시:20200000)"/>
+              <div  align="left" className="studentIdq">2. 학번 (예시:20200000)</div>
+                <input onChange={this.changeHandler} value={studentId}name="studentId"className="studentId-input" type="text" />
               </Paper>
               <div className="blank3"></div>
               <Paper >
-                <input  onChange={this.changeHandler} value={phoneNum} name="phoneNum" className="phoneNum-input" type="text" placeholder="전화번호(예시:01012345678)"/>
+              <div  align="left" className="phoneNumq">3. 전화번호 (예시:01091450485)</div>
+                <input  onChange={this.changeHandler} value={phoneNum} name="phoneNum" className="phoneNum-input" type="text"/>
               </Paper>
               <div className="blank4"></div>
               <Paper >
-                <input  onChange={this.changeHandler}  value={email}name="email"className="email-input" type="text" placeholder="이메일"/>
+              <div  align="left" className="emailq">4. 이메일</div>
+                <input  onChange={this.changeHandler}  value={email}name="email"className="email-input" type="text"/>
               </Paper>
               <div className="blank5"></div>
               <Paper >
-                <input  onChange={this.changeHandler} value={group}name="group" className="group-input" type="text" placeholder="희망 부서"/>
+              <div  align="left" className="groupq">5. 희망 부서 (기획 및 집행부/소통부/미디어부/비서실)</div>
+                <input  onChange={this.changeHandler} value={group}name="group" className="group-input" type="text"/>
               </Paper>
               <div className="blank5"></div>
               <Paper >
-                <textarea value={motive} name="motive"  onChange={this.changeHandler} className="motive-input" placeholder="지원동기를 자유롭게 작성해주세요"></textarea>
+              <div  align="left" className="motiveq">6. 지원동기를 자유롭게 작성해주세요</div>
+                <textarea value={motive} name="motive"  onChange={this.changeHandler} className="motive-input" ></textarea>
                 <img className = 'submit' src = "/images/apply_button.png" height='50px' onClick={this.submitHandler}></img>
               </Paper>
             </Grid>
