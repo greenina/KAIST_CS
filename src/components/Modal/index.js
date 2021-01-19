@@ -56,9 +56,17 @@ class Modal extends Component {
           <div className="Modal-overlay" onClick={this.props.close} />
           <div className="Modal">
             <div className="admin_title_wrap">
-            집행위원회 로그인
-            <button className="button-close" onClick={this.props.close}>X</button>
+              <div className="admin_title">
+                Only for Crews
+              </div>
+              <div className="staff">
+                {/* only for staffs */}
+              </div>
+              <div>
+              <img className = 'button-close' src = "/images/close_button.png" height='20px' onClick={this.props.close}></img>
             </div>
+            </div>
+            {/* <button className="button-close" onClick={this.props.close}>X</button> */}
             <div>
               <label className="id-input">Student Id
                 <input className="id__input"
@@ -78,7 +86,7 @@ class Modal extends Component {
                 <span className="password__strength" data-score={this.state.score} />
               </label>
             </div>
-            <button className="button-wrap" type="submit" >Login</button>
+            <img className = 'button-wrap' src = "/images/login_button.png" height='30px' onClick={this.onFormSubmit}></img>
           </div>
         </div>
         </form>
