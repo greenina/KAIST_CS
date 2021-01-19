@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.logo_black{
+    margin-top: 10px;
+    margin-left: 1200px;
+    margin-bottom: 5px;
+}
+
+.address{
+    margin-left: 1120px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    margin-bottom: 5px;
+    color: rgb(132, 122, 136);
+}
+
+.mail_add{
+    margin-left: 1330px;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: rgb(184, 179, 185);
+}
+
+.blank{
+    color: white;
+}

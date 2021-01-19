@@ -5,72 +5,75 @@ import { View } from 'react-native';
 import axios from 'axios';
 import AdminPage from '../AdminPage';
 import { Route, Link, Router } from 'react-router-dom';
+import Events from '../Events';
+import {useEffect, useState} from 'react'
+import EventAddPage from '../EventAddPage';
 
 
-class EventManagePage extends Component {
+const EventManagePage = (props)=>{
 
-  constructor(props){
-    super(props)
-    this.state={
-      photos: [],
-      title:'',
-      poster: null,
-      s_date:'',
-      e_date:'',
-      description:''
-    }
-    this.uploadHandler = this.uploadHandler.bind(this);
-  }
-  changeHandler =(e)=>{
-    this.setState({[e.target.name]:e.target.value})
-  }
-
-  submitHandler = (e) =>{
-    e.preventDefault();
-    console.log(this.state)
-    axios.post('http://192.249.18.245:8080/event/add', this.state)
-    .then(response=>{console.log(response)})
+  const [eventInfo, setEventInfo] = useState({});
+  useEffect(()=>{
+      let umounted = false;
+    axios.get("http://192.249.18.245:8081/event/all").then(
+        (res)=>{
+          setEventInfo(res.data)
+        }
+    )
     .catch(error =>{
       console.log(error)
     })
-    {<Route path="/administrator" component={AdminPage}/>}
+    return ()=>{umounted= true}
+  },[])
+  console.log(eventInfo);
+
+  var i =0 , elements = [];
+  for(i = 0; i<eventInfo.length; i++) {
+    var _title, _desc, _img1, _img2, _link,
+      _sdate, _edate, _progress, _article= null;
+    _title = eventInfo[i].title;
+    _desc = eventInfo[i].description;
+    _img1 = eventInfo[i].poster;
+    _img2 = eventInfo[i].card;
+    _sdate = eventInfo[i].s_date;
+    _edate = eventInfo[i].e_date;
+    _link = eventInfo[i].facebook;
+
+    var date = new Date(), sdate = new Date(_sdate), edate = new Date(_edate);
+    
+    if(sdate > date) _progress = '진행 예정';
+    else if(date > edate) _progress = '진행 종료';
+    else _progress = '진행 중';
+    _progress = _progress;
+    debugger;
+    
+    _article = <Events
+                title = {_title}
+                desc = {_desc}
+                src = {_img1}
+                src2 = {_img2}
+                progress = {_progress}
+                facebook = {_link}
+                ></Events>
+                debugger;
+    elements.push(_article);
   }
-
-  uploadHandler(event) {
-    const data = new FormData();
-    data.append('file', event.target.files[0]);
-    axios.post('http://192.249.18.245:8080/event/uploads', data);
+    
+  const clickHandler=() => {
+    document.location.href = "/add_events"
   }
-
-  render() {
-    const{title, poster, s_date, e_date, description} = this.state;
-
-    return (
-      <div className="events">
-        <form onSubmit={this.submitHandler}>
-          <div>
-            <input  onChange={this.changeHandler} value={title} name="title" className="title-input" type="text" placeholder="사업명"/>
-          </div>
-          <div>
-            <input  onChange={this.changeHandler} value={s_date} name="s_date" className="s_date-input" type="date" placeholder="시작일"/>
-          </div>
-          <div>
-            <input  onChange={this.changeHandler} value={e_date} name="e_date" className="e_date-input" type="date" placeholder="종료일"/>
-          </div>
-          <div>
-            <input  onChange={this.changeHandler} value={description} name="description" className="description-input" type="text" placeholder="사업 상세 설명"/>
-          </div>
-          <div>
-            <input type="file" name="file" className="poster-input" onChange={this.uploadHandler}/>
-          </div>
-          <div>
-            <input type="file" name="file" className="poster-input" onChange={this.uploadHandler}/>
-          </div>
-          <button className="submit" type="submit" >제출</button>
-        </form>
+  return(
+      <div id="eventtitle">
+        <View style={{flexDirection: 'row'}}>
+          <h1 className = 'events_list'>CURRENT EVENTS LIST</h1>
+          <img className = 'add_button' src = "/images/add_event_button.png" width='180px' height='60px' onClick={clickHandler}></img>
+        </View>
+          {elements}
+      <div className = 'blank'>hi</div>
       </div>
-    );
-  }
+  )
 }
+
+
     
 export default EventManagePage;

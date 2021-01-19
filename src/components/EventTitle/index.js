@@ -23,7 +23,7 @@ const EventTitle = (props)=>{
 
     var i =0 , elements = [];
     for(i = 0; i<eventInfo.length; i++) {
-      var _title, _desc, _img1, _img2,
+      var _title, _desc, _img1, _img2, _link,
         _sdate, _edate, _progress, _article= null;
       _title = eventInfo[i].title;
       _desc = eventInfo[i].description;
@@ -31,6 +31,7 @@ const EventTitle = (props)=>{
       _img2 = eventInfo[i].card;
       _sdate = eventInfo[i].s_date;
       _edate = eventInfo[i].e_date;
+      _link = eventInfo[i].facebook;
 
       var date = new Date(), sdate = new Date(_sdate), edate = new Date(_edate);
       
@@ -46,15 +47,17 @@ const EventTitle = (props)=>{
                   src = {_img1}
                   src2 = {_img2}
                   progress = {_progress}
+                  facebook = {_link}
                   ></Events>
+                  debugger;
      elements.push(_article);
     }
   
 
     return(
         <div id="eventtitle">
-            <h1>학생회 사업</h1>
-            {elements}
+            <h1 className="events" >EVENTS</h1>
+            {elements} 
         </div>
     )
 }

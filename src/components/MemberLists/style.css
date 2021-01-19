@@ -1,3 +1,47 @@
-.member{
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+.profile_photo {
     text-align: center;
+    margin-bottom: 25px;
+}
+
+.st_name {
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    margin-left: 15px;
+    margin-right: 230px;
+    margin-top: 120px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: rgb(84, 62, 90);
+    background: rgb(217, 208, 221);
+}
+
+.st_department {
+    margin-left: 15px;
+    margin-bottom: 2px;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
+    color: rgb(126, 118, 129);
+}
+.st_tf {
+    margin-left: 15px;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
+    color: rgb(126, 118, 129);
+}
+
+.dep_name{
+    margin-left: 20px;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
+    color: rgb(176, 161, 182);
+
+}
+.tf_name{
+    margin-left: 20px;
+    font-family: 'Nanum Gothic';
+    font-weight: bold;
+    color: rgb(176, 161, 182);
 }

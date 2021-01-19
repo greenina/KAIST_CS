@@ -1,9 +1,13 @@
 .fade-container{
-    align-content: center;
-    width:450px;
-    height: 100%;
+    width: auto;
 }
-.intro{
-    align-content: center;
+.images{
     text-align: center;
+}
+
+.empty{
+    color: white;
+    margin-bottom: 110px;
+    padding: 0;
+    font-size: 0px;
 }

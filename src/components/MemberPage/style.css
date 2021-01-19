@@ -1,3 +1,17 @@
-.members{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.all{
+    background: rgb(237, 238, 236);
+}
+.control_rows{
+    margin-left: 600px;
+}
+.studentID{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    font-size: 26px;
+    color: rgb(107, 102, 109);
 }

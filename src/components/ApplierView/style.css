@@ -1,6 +1,31 @@
 .applier{
     width: 1000px;
+    text-align: center;
 }
 .detailInfo{
     text-align: center;
+}
+.paper{
+    color: blue;
+}
+.pass{
+   color: blue;
+}
+.fail{
+    color:red;
+}
+.passname{
+    color:rgb(125, 125, 177)
+}
+.failname{
+    color:red;
+}
+.failgroup{
+    color:red;
+}
+.passgroup{
+    color:blue;
+}
+.detailbtn{
+    margin-bottom: 20px;
 }

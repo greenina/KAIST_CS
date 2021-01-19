@@ -55,8 +55,10 @@ class Modal extends Component {
         <div>
           <div className="Modal-overlay" onClick={this.props.close} />
           <div className="Modal">
-            <p className="title">집행위원회 로그인</p>
-            
+            <div className="admin_title_wrap">
+            집행위원회 로그인
+            <button className="button-close" onClick={this.props.close}>X</button>
+            </div>
             <div>
               <label className="id-input">Student Id
                 <input className="id__input"
@@ -77,7 +79,6 @@ class Modal extends Component {
               </label>
             </div>
             <button className="button-wrap" type="submit" >Login</button>
-            <button className="button-wrap" onClick={this.props.close}>Close</button>
           </div>
         </div>
         </form>
