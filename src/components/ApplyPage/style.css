@@ -46,8 +46,8 @@
     height: 70px;
 }
 .recruit{
-    background: rgb(226, 223, 236);
-    height: 1300px;
+    background: rgb(234, 233, 240);
+    height: 1370px;
 }
 .blank{
     height: 20px;
@@ -103,6 +103,7 @@
     width: 760px;
     font-family: 'Nanum Gothic';
     min-height: 500px;
+    margin-bottom: 15px;
 }
 .nameq{
     margin-left: 15px;
