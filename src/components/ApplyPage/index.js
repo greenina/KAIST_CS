@@ -44,6 +44,7 @@ class ApplyPage extends Component{
 
     return(
       <div className="recruit">
+
         <form  onSubmit={this.submitHandler}  alignItems="center" justify="center">
           <Grid align="center"
                 justify="center"
@@ -86,6 +87,7 @@ class ApplyPage extends Component{
             
             {/* <button className="submit" type="submit" >제출</button> */}
           </Grid>
+
         </form>
       </div>
     )

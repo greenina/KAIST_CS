@@ -1,34 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .recruit{
     text-align: center;
 }
 .name-input{
+    margin-top: 30px;
+    font-family: 'Nanum Gothic';
     width: 500px;
     height: 40px;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 .studentId-input{
+    font-family: 'Nanum Gothic';
     width: 500px;
     height: 40px;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 .phoneNum-input{
+    font-family: 'Nanum Gothic';
     width: 500px;
     height: 40px;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 .email-input{
+    font-family: 'Nanum Gothic';
     width: 500px;
     height: 40px;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 .group-input{
+    font-family: 'Nanum Gothic';
     width: 500px;
     height: 40px;
-    margin: 10px;
+    margin-bottom: 20px;
 }
 .motive-input{
-    width: 80%;
+    font-family: 'Nanum Gothic';
+    width: 500px;
     min-height: 500px;
 }
 /* .submit{
