@@ -4,6 +4,8 @@ import './style.css'
 import { View } from 'react-native';
 import axios from 'axios';
 import AdminPage from '../AdminPage';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 import { Route, Link, Router } from 'react-router-dom';
 
 
@@ -49,30 +51,57 @@ class EventAddPage extends Component {
       document.location.href = "/manage_events"
     }
     return (
-      <div className="events">
+      <div className="events_back">
         <form onSubmit={this.submitHandler}>
-          <div>
-            <input  onChange={this.changeHandler} value={title} name="title" className="title-input" type="text" placeholder="사업명"/>
-          </div>
-          <div>
-            <input  onChange={this.changeHandler} value={s_date} name="s_date" className="s_date-input" type="date" placeholder="시작일"/>
-          </div>
-          <div>
-            <input  onChange={this.changeHandler} value={e_date} name="e_date" className="e_date-input" type="date" placeholder="종료일"/>
-          </div>
-          <div>
-            <input  onChange={this.changeHandler} value={description} name="description" className="description-input" type="text" placeholder="사업 상세 설명"/>
-          </div>
-          <div>
-            <input  onChange={this.changeHandler} value={facebook} name="facebook" className="description-input" type="text" placeholder="페북 공지 링크"/>
-          </div>
-          <div>
+        <Grid align="center"
+                justify="center"
+                direction="column"
+                className="format"  
+                alignItems="center" 
+                justify="center">
+          <Grid item xs={5} alignItems="center" justify="center">
+          <div className="_blank"></div>
+          <Paper className="titlePaper" >
+                <div className="apply_title">학생회 사업 추가</div>
+          </Paper>
+          <div className="blank1"></div>
+          <Paper >
+          <div align="left" className="nameq">1. 사업명</div>
+            <input  onChange={this.changeHandler} value={title} name="title" className="title-input" type="text" />
+          </Paper>
+          <div className="blank2"></div>
+          <Paper >
+          <div align="left" className="studentIdq">2. 사업 시작일</div>
+            <input  onChange={this.changeHandler} value={s_date} name="s_date" className="s_date-input" type="date" />
+          </Paper>
+          <div className="blank3"></div>
+          <Paper >
+          <div align="left" className="phoneNumq">3. 사업 종료일</div>
+            <input  onChange={this.changeHandler} value={e_date} name="e_date" className="e_date-input" type="date" />
+          </Paper>
+          <div className="blank4"></div>
+          <Paper >
+          <div align="left" className="emailq">4. 사업 내용</div>
+            <input  onChange={this.changeHandler} value={description} name="description" className="description-input" type="text" />
+          </Paper>
+          <div className="blank5"></div>
+          <Paper >
+          <div align="left" className="groupq">5. 페이스북 공지 링크</div>
+            <input  onChange={this.changeHandler} value={facebook} name="facebook" className="description-input" type="text" />
+          </Paper>
+          <div className="blank5"></div>
+          <Paper >
+          <div align="left" className="motiveq">6. 로고 이미지</div>
             <input type="file" name="file" className="poster-input" onChange={this.uploadHandler}/>
-          </div>
-          <div>
+          </Paper>
+          <div className="blank5"></div>
+          <Paper >
+          <div align="left" className="motiveq">7. 포스터 및 카드뉴스 이미지</div>
             <input type="file" name="file" className="poster-input" onChange={this.uploadHandler}/>
-          </div>
-          <button className="submit" type="submit" onClick={moveHref}>제출</button>
+          </Paper>
+          <img className = 'submit' src = "/images/save_button.png"  height='45px' onClick={moveHref}></img>
+          </Grid>
+        </Grid>
         </form>
       </div>
     );

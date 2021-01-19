@@ -1,41 +1,144 @@
-.events{
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+.events_back{
+    text-align: center;
+    background: rgb(226, 223, 236);
+    height: 1000px;
+}
+.name-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.studentId-input{
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+}
+.phoneNum-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.email-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.group-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+
+.format{
+    orientation: center;
+}
+
+.apply_title{
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    padding-top: 15px;
+    color: rgb(77, 77, 109);
+    font-size: 30px;
+    margin-top: 30px;
     text-align: center;
 }
+.titlePaper{
+    height: 70px;
+}
+.recruit{
+    background: rgb(226, 223, 236);
+    height: 1300px;
+}
+._blank{
+    height: 1px;
+}
+.blank1{
+    height: 7px;
+}
+.blank2{
+    height: 7px;
+}
+.blank3{
+    height: 7px;
+}
+.blank4{
+    height: 7px;
+}
+.blank5{
+    height: 7px;
+}
+.motive-input{
+    margin-top: 14px;
+}
+.submit{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .title-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
 }
 .s_date-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
 }
 .e_date-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
 }
 .description-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin-bottom: 15px;
 }
 .poster-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
+    width: 760px;
+    font-family: 'Nanum Gothic';
+    margin: 15px;
 }
-/* .submit{
-    width: 200px;
-    height: 50px;
+.nameq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
     font-size: 20px;
-    padding: 20px;
-    border: none;
-    background: indianred;
-    border-radius: 5px;
-} */
-.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
-    min-height: 300px;
-    min-width: 500px;
-  }
+}
+.studentIdq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    font-size: 20px;
+}
+.phoneNumq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    font-size: 20px;
+}
+.emailq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    font-size: 20px;
+}
+.groupq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    font-size: 20px;
+}
+.motiveq{
+    margin-left: 15px;
+    padding-top: 13px;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    font-size: 20px;
+}

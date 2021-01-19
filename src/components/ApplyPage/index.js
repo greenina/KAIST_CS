@@ -44,7 +44,6 @@ class ApplyPage extends Component{
 
     return(
       <div className="recruit">
-
         <form  onSubmit={this.submitHandler}  alignItems="center" justify="center">
           <Grid align="center"
                 justify="center"
