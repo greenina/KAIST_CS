@@ -103,7 +103,7 @@ function Applier({applier}){
                 <textarea className="comment-input" onChange={commentHandler} value={comment} name="comment"></textarea>
             </div>
             <form onSubmit={submitHandler}>
-              <div className="passorfail">
+            {applier.pass?<div className="ppassorfail">
                   합불 여부
                 <input
                   type="checkbox"
@@ -111,7 +111,15 @@ function Applier({applier}){
                   checked={pass === true}
                   onChange={passHandler}
                 />
-              </div>
+              </div>:<div className="fpassorfail">
+                  합불 여부
+                <input
+                  type="checkbox"
+                  value="comment"
+                  checked={pass === true}
+                  onChange={passHandler}
+                />
+              </div>}
               <img className = 'submitBtn' src = "/images/save_button.png"   height="32px"onClick={submitHandler}></img>
               {/* <button className="submit" type="submit" >저장</button> */}
               {/* {applier.pass?<div className="pass">합격</div>:<div className="fail">불합격</div>} */}

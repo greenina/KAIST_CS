@@ -4,6 +4,8 @@ import { reset } from 'redux-form';
 import axios from 'axios';
 import { connect } from "react-redux";
 import { ToastContainer, toast } from 'react-toastify';
+import './contact.css';
+
 class Contact extends React.Component {
     constructor(props) {
         super(props);
@@ -52,7 +54,7 @@ class Contact extends React.Component {
     <div className='bwm-form'>
     <div className='row'>
     <div className='col-md-5'>
-    <h1>Contact Us</h1>
+    <h1 className='mailsend_title'>결과 발송</h1>
     <ContactForm
     loading={this.state.loading}
     submitCb={this.Send}
