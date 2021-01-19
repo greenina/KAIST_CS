@@ -1,3 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 .Events {
     text-align: center;
+  }
+
+  .title{
+    font-family: 'Nanum Gothic';
+    font-weight:1000;
+    font-size: 20px;
+    margin-left: 7px;
+    color: rgb(74, 43, 80);
+  }
+  .poster{
+    margin-left: 450px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  .desc{
+    font-family: 'Nanum Gothic';
+    margin-right: 450px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(73, 86, 99);
+  }
+  .prog_end{
+    margin-top: 4px;
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+    margin-left: 35px;
+    margin-right: 350px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color:rgb(176, 181, 185);
+  }
+  .prog_ing{
+    margin-top: 4px;
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+    margin-left: 35px;
+    margin-right: 350px;
+    margin-bottom: 12px;
+    font-weight: bolder;
+    color:rgb(28, 161, 50);
+  }
+  .prog_coming{
+    margin-top: 4px;
+    font-family: 'Nanum Gothic';
+    font-size: 15px;
+    margin-left: 35px;
+    margin-right: 350px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color:rgb(211, 93, 93);
+  }
+  .details{
+    margin-top: 50px;
   }

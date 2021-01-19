@@ -3,6 +3,7 @@ import './style.css'
 import {CKEditor} from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import axios from 'axios';
+import SelectInput from '@material-ui/core/Select/SelectInput';
 class ApplyPage extends Component{
   constructor(props){
     super(props)
@@ -34,6 +35,11 @@ class ApplyPage extends Component{
 
   render(){
     const{name, studentId, phoneNum, email, group, motive, comment, pass} = this.state
+
+    const moveHref = () => {
+      document.location.href = "/"
+    }
+
     return(
       <div className="recruit">
         <form onSubmit={this.submitHandler}>

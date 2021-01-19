@@ -10,14 +10,6 @@ import { Provider } from 'react-redux';
 import Contact from '../email/Contact';
 const store = require('../email/reducers').init();
 
-
-// async function request(){
-//   const response = await fetch('http://192.249.18.245:8080/appliers/all',{
-//     method:"GET"
-//   })
-//   const data = await response.json();
-//   console.log(data);
-// }
 const styles = theme => ({
   root: {
     padding: theme.spacing(5),
@@ -29,7 +21,7 @@ const styles = theme => ({
     color: theme.palette.text.primary,
   },
 });
-function Applier({applier}){  
+function Applier({applier}){
     const [modalState, setModalState] = useState(false);
     const [modalState2, setModalState2] = useState(false);
     const [comment, setComment] = useState('');
@@ -68,6 +60,7 @@ function Applier({applier}){
         })
         
       }
+    
   return(
       <div className="applier">
           <Grid item xs={2}>
@@ -113,7 +106,6 @@ function Applier({applier}){
             </div>
         </Modal>
       </div>
-        
   )
 }
 function ApplierView(props){

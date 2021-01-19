@@ -1,9 +1,11 @@
 import { Component } from 'react';
 import ApplierView from '../ApplierView';
 import './style.css';
+import nodemailer from 'nodemailer';
+import axios from 'axios';
 
 class ApplyManagePage extends Component {
-  
+
     render() {
       return (
         <div className="appliers">

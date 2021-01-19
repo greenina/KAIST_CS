@@ -1,14 +1,24 @@
-import React  from 'react'
+import React, { Component }  from 'react'
 import './style.css'
 
-const Members = (props)=>{
-    return(
-        <div className="members" id="members"style={{height:100}}>
-            <h1>MEMBERS</h1>
+class Members extends Component{
+    
+    showMembers = () => {
+        document.location.href = "/members"
+      }
+      applyFor = () => {
+        document.location.href = "/apply"
+      }
 
-            <h1 className="sy">전산학부 비선실세 최승연</h1>
-        </div>
-    )
+      render() {
+        return(
+            <div className="members" id="members">
+                <h1>MEMBERS</h1>
+                    <img className = 'show_members' src = "/images/members.png" width='230px' height='230px' onClick={this.showMembers}></img>
+                    <img className = 'apply' src = "/images/apply.png" width='230px' height='230px' onClick={this.applyFor}></img>
+            </div>
+        )
+      }
 }
 
 export default Members;

@@ -1,3 +1,7 @@
-.member{
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.profile_photo {
     text-align: center;
+    margin-left: 300px;
+    margin-bottom: 30px;
 }
