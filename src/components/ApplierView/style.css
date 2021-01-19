@@ -1,31 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .applier{
     width: 1000px;
     text-align: center;
 }
 .detailInfo{
     text-align: center;
+    font-family: 'Nanum Gothic';
 }
 .paper{
-    color: blue;
+    color: rgb(10, 10, 85);
 }
 .pass{
-   color: blue;
+    color: rgb(63, 63, 168);
 }
 .fail{
     color:red;
 }
+.personicon{
+    padding-top: 50px;
+}
 .passname{
-    color:rgb(125, 125, 177)
+    color: rgb(63, 63, 168);
+    font-family: 'Nanum Gothic';
 }
 .failname{
-    color:red;
+    color:rgb(179, 15, 15);
+    font-family: 'Nanum Gothic';
 }
 .failgroup{
-    color:red;
+    color:rgb(82, 75, 94);
+    font-family: 'Nanum Gothic';
 }
 .passgroup{
-    color:blue;
+    color:rgb(82, 75, 94);
+    font-family: 'Nanum Gothic';
 }
-.detailbtn{
-    margin-bottom: 20px;
+.details_btn{
+    margin-bottom: 40px;
+    padding-top: 20px;
 }
+
+/* .failgroup{
+    color:rgb(216, 100, 100);
+    font-family: 'Nanum Gothic';
+}
+.passgroup{
+    color: rgb(42, 118, 190);
+    font-family: 'Nanum Gothic';
+} */

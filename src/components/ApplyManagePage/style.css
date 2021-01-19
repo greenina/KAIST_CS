@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 .appliers{
     text-align: center;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+    color:rgb(83, 55, 105);
 }

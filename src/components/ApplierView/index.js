@@ -60,14 +60,16 @@ function Applier({applier}){
         })
         
       }
-    
+
   return(
       <div className="applier">
           <Grid item xs={3}>
           <Paper>
+            <img className = 'personicon' src = "/images/person_icon.png" width='70px' height='65px'></img>
             {applier.pass?<h1 className="passname">{applier.name}</h1>:<h1 className="failname">{applier.name}</h1>}
             {applier.pass?<h2 className="passgroup">{applier.group}</h2>:<h2 className="failgroup">{applier.group}</h2>}
-            <button className="detailbtn"onClick={openModal}>상세 보기</button>
+            {/* <button className="detailbtn"onClick={openModal}>상세 보기</button> */}
+            <img className = 'details_btn' src = "/images/details_button.png" width='70px' height='30px' onClick={openModal}></img>
           </Paper>
         </Grid>
         <Modal isOpen={modalState} onRequestClose={closeModal} contentLabel="Example Modal">
