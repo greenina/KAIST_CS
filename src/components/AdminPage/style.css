@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.admin_page{
+    font-size: 17px;
+    color:rgb(133, 127, 134);
+    margin-top: 300px;
+    text-align: center;
+    font-family: 'Nanum Gothic';
+    font-weight: bolder;
+}
+
+.manage_events{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.manage_apply{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.for_logout{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}

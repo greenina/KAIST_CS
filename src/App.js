@@ -60,16 +60,16 @@ class App extends Component {
               <Route path="/members" exact component={Memberpage}/>
               <Route path="/apply" exact component={Applypage}/>
               <Route path="/manage_events" component={EventManagePage}/>
+              <Route path="/add_events" component={EventAddPage}/>
               <Route path="/manage_apply" component={ApplyManagePage}/>
+              <Route path="/administrator" component={AdminPage}/>
               <Redirect to="/"/>
             </Switch>
           </BrowserRouter>
           :
           <BrowserRouter>
             <Switch>
-              <Route path="/administrator" exact render= {
-                  () => <AdminPage changeState = {this.changeState} />
-                } />
+              <Route path="/administrator" component={AdminPage}/>
               <Route path="/manage_events" component={EventManagePage}/>
               <Route path="/add_events" component={EventAddPage}/>
               <Route path="/manage_apply" component={ApplyManagePage}/>

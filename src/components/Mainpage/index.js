@@ -53,14 +53,6 @@ class Mainpage extends Component {
             <Intro/>
             <EventTitle />
             <Members />
-            {/* <ul>
-              <li>
-                <Link to="/members">Members</Link>
-              </li>
-              <li>
-                <Link to="/apply">Apply</Link>
-              </li>
-            </ul> */}
             <Route path="/members" component={Memberpage}/>
             <Route path="/apply" component={Applypage}/>
             <Extra className = 'extrapart'/>
