@@ -121,9 +121,9 @@ function ApplierView(props){
       .catch(error =>{
         console.log(error)
       })
-      console.log(applierInfo);
+      
       return ()=>{umounted= true}
-    },[applierInfo.comment])
+    },[])
     return (
       <div className={classes.root}>
         <Grid container spacing={2}>
