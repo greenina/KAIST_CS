@@ -15,7 +15,7 @@
     color:red;
 }
 .passname{
-    color:blue
+    color:rgb(125, 125, 177)
 }
 .failname{
     color:red;
@@ -25,4 +25,7 @@
 }
 .passgroup{
     color:blue;
+}
+.detailbtn{
+    margin-bottom: 20px;
 }

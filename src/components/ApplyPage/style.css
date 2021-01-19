@@ -52,3 +52,49 @@
     min-height: 300px;
     min-width: 500px;
   }
+
+.format{
+    orientation: center;
+}
+
+.title{
+    /* font-family: 'Nanum Gothic';
+    font-weight: bolder; */
+    padding-top: 15px;
+    color: darkblue;
+    font-size: 30px;
+    margin-top: 3px;
+    text-align: center;
+}
+.titlePaper{
+    height: 70px;
+}
+.recruit{
+    background: rgb(226, 223, 236);
+    height: 1130px;
+}
+.blank{
+    height: 20px;
+}
+.blank1{
+    height: 7px;
+}
+.blank2{
+    height: 7px;
+}
+.blank3{
+    height: 7px;
+}
+.blank4{
+    height: 7px;
+}
+.blank5{
+    height: 7px;
+}
+.motive-input{
+    margin-top: 20px;
+}
+.submit{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -9,6 +9,7 @@ import Memberpage from '../MemberPage';
 import Applypage from '../ApplyPage';
 import { Route, Link, Router } from 'react-router-dom';
 import AdminPage from '../AdminPage'
+import './style.css'
 
 class Mainpage extends Component {
     constructor(props) {
@@ -48,7 +49,7 @@ class Mainpage extends Component {
     render() {
       return (
         this.state.mode === 'visitor_main'?
-          <div >
+          <div  className="all">
             <Header changeState={this.props.changeState} classname='header' />
             <Intro/>
             <EventTitle />

@@ -63,11 +63,11 @@ function Applier({applier}){
     
   return(
       <div className="applier">
-          <Grid item xs={2}>
+          <Grid item xs={3}>
           <Paper>
             {applier.pass?<h1 className="passname">{applier.name}</h1>:<h1 className="failname">{applier.name}</h1>}
             {applier.pass?<h2 className="passgroup">{applier.group}</h2>:<h2 className="failgroup">{applier.group}</h2>}
-            <button onClick={openModal}>상세 보기</button>
+            <button className="detailbtn"onClick={openModal}>상세 보기</button>
           </Paper>
         </Grid>
         <Modal isOpen={modalState} onRequestClose={closeModal} contentLabel="Example Modal">
