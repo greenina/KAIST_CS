@@ -4,31 +4,6 @@
 .events{
     text-align: center;
 }
-.title-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
-}
-.s_date-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
-}
-.e_date-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
-}
-.description-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
-}
-.poster-input{
-    width: 500px;
-    height: 40px;
-    margin: 10px;
-}
 /* .submit{
     width: 200px;
     height: 50px;
@@ -45,7 +20,7 @@
 
   .events_list{
       
-    margin-left: 500px;
+    margin-left: 300px;
     margin-top: 80px;
     font-family: 'Nanum Gothic';
     font-weight: bolder;
@@ -53,11 +28,11 @@
 }
   
   .add_button{
-    margin-left: 430px;
-    margin-top: 70px;
+      margin-left: 300px;
+      margin-top: 70px;
   }
 
   .blank{
-    color: white;
-    font-size: 20px;
+      color: white;
+    font-size: 40px;
   }

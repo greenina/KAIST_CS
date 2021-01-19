@@ -63,7 +63,7 @@ function Applier({applier}){
 
   return(
       <div className="applier">
-          <Grid item xs={3}>
+          <Grid item xs={2}>
           <Paper>
             <img className = 'personicon' src = "/images/person_icon.png" width='70px' height='65px'></img>
             {applier.pass?<h1 className="passname">{applier.name}</h1>:<h1 className="failname">{applier.name}</h1>}
