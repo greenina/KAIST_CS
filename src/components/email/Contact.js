@@ -14,6 +14,7 @@ class Contact extends React.Component {
         }
         this.pristine = false;
         this.Send = this.Send.bind(this);
+        this.applier = this.props.applier;
     }
     // SetImage = async (image) => {
         
@@ -24,7 +25,7 @@ class Contact extends React.Component {
         this.setState({ loading: true });
         this.sendEmail(userData).then(
         submited => {
-            toast.success('Email sent successfully');
+            // toast.success('Email sent successfully');
             this.props.dispatch(reset('ContactForm'));
             this.setState({ key: 'cleared' })
             this.setState({ note: 'Email sent successfully', loading: false });

@@ -92,7 +92,7 @@ function Applier({applier}){
                     <BrowserRouter>
                         <div className='App'>
                             <div className='container'>
-                            <Route exact path='/manage_apply' component={Contact} />
+                            <Route exact path='/manage_apply' component={()=><Contact applier ={applier}/>} />
                             </div>
                         </div>
                     </BrowserRouter>
