@@ -34,9 +34,9 @@
        color: white;
     font-family: 'Nanum Gothic';
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 23px;
     margin-left: 15px;
-    margin-top: 7px;
+    margin-top: 5px;
     text-align: center;
   } 
   .staff{
@@ -46,8 +46,8 @@
       font-size: 12px;
   }
   .button-close{
-      padding-top: 0px;
-      padding-right: 8px;
+      padding-top: 8px;
+      padding-right: 13px;
       flex:30px;
 }
 .id-input{
