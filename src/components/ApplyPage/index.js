@@ -44,6 +44,7 @@ class ApplyPage extends Component{
 
     return(
       <div className="recruit">
+
         <form  onSubmit={this.submitHandler}  alignItems="center" justify="center">
           <Grid align="center"
                 justify="center"
@@ -54,7 +55,7 @@ class ApplyPage extends Component{
             <Grid item xs={5} alignItems="center" justify="center">
               <div className="blank"></div>
               <Paper className="titlePaper" >
-                <div className="title">전산학부 학생회 지원서</div>
+                <div className="apply_title">전산학부 학생회 지원서</div>
               </Paper>
               <div className="blank1"></div>
               <Paper >
@@ -91,6 +92,7 @@ class ApplyPage extends Component{
             
             {/* <button className="submit" type="submit" >제출</button> */}
           </Grid>
+
         </form>
       </div>
     )
