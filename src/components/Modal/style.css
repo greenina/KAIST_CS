@@ -16,21 +16,40 @@
       width: 400px;
       z-index: 100;
       border-radius: 10px;
-      background-color: white;
+      background-color: rgb(255, 255, 255);
       box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
   }
-/* 
+
   .admin_title_wrap{
+      padding-top: 7px;
+      box-sizing: border-box;
+      border-radius: 10px 10px 0px 0px;
       text-align: center;
-      font-family: 'Nanum Gothic';
-      font-weight: bolder;
-      background: cornflowerblue;
+      background: rgb(162, 160, 173);
       height: 50px;
-  } */
-  /* .admin-title{
+      display: flex;
+      flex-direction: row;
+  } 
+   .admin_title{
+       color: white;
     font-family: 'Nanum Gothic';
     font-weight: bolder;
-  } */
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 7px;
+    text-align: center;
+  } 
+  .staff{
+      margin-left: 1px;
+      padding-top: 20px;
+      flex:10px;
+      font-size: 12px;
+  }
+  .button-close{
+      padding-top: 0px;
+      padding-right: 8px;
+      flex:30px;
+}
 .id-input{
     font-family: 'Nanum Gothic';
     font-weight: bolder;
@@ -47,6 +66,7 @@
     width: 200px;
     height: 30px;
     margin: 5px;
+    margin-top: 20px;
 }
 
 
@@ -58,4 +78,5 @@
       
 .button-wrap{
     margin: 10px;
+    padding-left: 150px;
 }
