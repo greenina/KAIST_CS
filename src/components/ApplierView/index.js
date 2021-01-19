@@ -8,6 +8,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Modal from 'react-modal';
 import { Provider } from 'react-redux';
 import Contact from '../email/Contact';
+import {View} from 'react-native';
+
 const store = require('../email/reducers').init();
 
 const styles = theme => ({
@@ -73,39 +75,62 @@ function Applier({applier}){
           </Paper>
         </Grid>
         <Modal isOpen={modalState} onRequestClose={closeModal} contentLabel="Example Modal">
+        <div className="title-wrapper">
+              <div className="blank">    </div>
+              <h2 className ="detail_Info">지원자 상세정보</h2>
+              <img className = 'button-close' src = "/images/close_circle.png" width="35px"height='35px' onClick={closeModal}></img>
+        </div>
+        <View style={{flexDirection: 'row'}}>
+          <View style={{flexDirection: 'column'}}>
+        <View style={{flexDirection: 'row'}}>
+          <View style={{flexDirection: 'column'}}>
+              <div className="applier_title">지원자 성명</div>
+            <div className="applier_title">희망 부서</div>
+            <div className="applier_title">이메일</div>
+            <div className="applier_title">지원 동기</div>
+            <div className="applier_title">평가란{applier.comment}</div>
+            </View>
+            <div className="for_emptyspace"/>
+            <View style={{flexDirection: 'column'}}>
+              <div className="applier_text">{applier.name}</div>
+            <div className="applier_text">{applier.group}</div>
+            <div className="applier_text">{applier.email}</div>
+            <div className="applier_text">{applier.motive}</div>
+            </View>
+            </View>
+
             <div>
-            <h2 className ="detailInfo">지원자 상세정보</h2>
-            <div>지원자 성명:{applier.name}</div>
-            <div>희망 부서:{applier.group}</div>
-            <div>이메일:{applier.email}</div>
-            <div>지원 동기:{applier.motive}</div>
-            <div>평가란:{applier.comment}</div>
-            <div>
-                <textarea className="comment-input" onChange={commentHandler} placeholder="지원자 평가란" value={comment} name="comment"></textarea>
+                <textarea className="comment-input" onChange={commentHandler} value={comment} name="comment"></textarea>
             </div>
-            <Provider store={store}>
-                    <BrowserRouter>
-                        <div className='App'>
-                            <div className='container'>
-                            <Route exact path='/manage_apply' component={()=><Contact applier ={applier}/>} />
-                            </div>
-                        </div>
-                    </BrowserRouter>
-                </Provider>
             <form onSubmit={submitHandler}>
-            <div>
-                합불 여부
-            <input
-              type="checkbox"
-              value="comment"
-              checked={pass === true}
-              onChange={passHandler}
-            />
-            </div>
-            <button className="submit" type="submit" >저장</button>
-            {applier.pass?<div className="pass">합격</div>:<div className="fail">불합격</div>}
+              <div className="passorfail">
+                  합불 여부
+                <input
+                  type="checkbox"
+                  value="comment"
+                  checked={pass === true}
+                  onChange={passHandler}
+                />
+              </div>
+              <img className = 'submitBtn' src = "/images/save_button.png"   height="32px"onClick={submitHandler}></img>
+              {/* <button className="submit" type="submit" >저장</button> */}
+              {/* {applier.pass?<div className="pass">합격</div>:<div className="fail">불합격</div>} */}
             </form>
+            </View>
+            <div className= "contact_view">
+          <View style={{flexDirection: 'column'}}>
+            <Provider store={store}>
+              <BrowserRouter>
+                <div className='App'>
+                    <div className='container'>
+                    <Route exact path='/manage_apply' component={()=><Contact email ={applier.email}/>} />
+                    </div>
+                </div>
+              </BrowserRouter>
+            </Provider>
+            </View>
             </div>
+            </View>
         </Modal>
       </div>
   )
