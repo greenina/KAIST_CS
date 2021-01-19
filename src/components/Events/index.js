@@ -13,12 +13,12 @@ class Events extends Component {
                 <li><a>{this.props.title}</a></li>  
                 <View style={{flex: 1, flexDirection: 'row'}}>
                     <img
-                        src = {'http://192.249.18.245:8080/' + this.props.src}
+                        src = {'http://192.249.18.245:8081/' + this.props.src}
                         onMouseOver={e => 
-                            e.target.src = 'http://192.249.18.245:8080/' + this.props.src2
+                            e.target.src = 'http://192.249.18.245:8081/' + this.props.src2
                         }
                         onMouseOut={e => 
-                            e.target.src = 'http://192.249.18.245:8080/' + this.props.src
+                            e.target.src = 'http://192.249.18.245:8081/' + this.props.src
                         }
                         width='200'
                         height='200'/>    
