@@ -1,7 +1,7 @@
 import { Component, useState } from 'react';
 import { View } from 'react-native';
 import MemberLists from '../MemberLists'
-import './style.css'
+import './style.css';
 
 class MemberPage extends Component {
   constructor(props) {
@@ -59,64 +59,63 @@ class MemberPage extends Component {
 
   render() {
     return (
-      <div className="members">
-        <h2>Members Page</h2>
+      <div>
         <h2>18학번 집행위원회</h2>
-        <View style={{textAlignVertical: "center",textAlign: "center",flex: 1, flexDirection: 'row'}}>
+        <View className = 'control_rows' style={{flexDirection: 'row'}} >
           {this.getContent(0)}
           {this.getContent(1)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row'}}>
           {this.getContent(2)}
           {this.getContent(3)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row'}}>
           {this.getContent(4)}
           {this.getContent(5)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row'}}>
           {this.getContent(6)}
           {this.getContent(7)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row'}}>
           {this.getContent(8)}
           {this.getContent(9)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row'}}>
           {this.getContent(10)}
           {this.getContent(11)}
         </View>
           
         <h2>19학번 집행위원회</h2>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row'}}>
           {this.getContent(12)}
           {this.getContent(13)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row'}}>
           {this.getContent(14)}
           {this.getContent(15)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{ flexDirection: 'row'}}>
           {this.getContent(16)}
           {this.getContent(17)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row'}}>
           {this.getContent(18)}
           {this.getContent(19)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row'}}>
           {this.getContent(20)}
           {this.getContent(21)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row'}}>
           {this.getContent(22)}
           {this.getContent(23)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row'}}>
           {this.getContent(24)}
           {this.getContent(25)}
         </View>
-        <View style={{flex: 1, flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row'}}>
           {this.getContent(26)}
           {this.getContent(27)}
         </View>

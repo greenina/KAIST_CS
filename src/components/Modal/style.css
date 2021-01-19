@@ -18,6 +18,10 @@
       background-color: white;
       box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
   }
+
+  .admin_title{
+      text-align: center;
+  }
   
 .id__input{
     width: 200px;

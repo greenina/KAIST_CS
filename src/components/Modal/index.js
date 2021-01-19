@@ -55,7 +55,7 @@ class Modal extends Component {
         <div>
           <div className="Modal-overlay" onClick={this.props.close} />
           <div className="Modal">
-            <p className="title">집행위원회 로그인</p>
+            <p className="admin_title">집행위원회 로그인</p>
             
             <div>
               <label className="id-input">Student Id

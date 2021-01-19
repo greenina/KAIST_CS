@@ -1,0 +1,41 @@
+.events{
+    text-align: center;
+}
+.title-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.s_date-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.e_date-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.description-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.poster-input{
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+/* .submit{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    background: indianred;
+    border-radius: 5px;
+} */
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+    min-height: 300px;
+    min-width: 500px;
+  }

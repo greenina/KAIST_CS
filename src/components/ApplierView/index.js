@@ -6,14 +6,6 @@ import axios from 'axios';
 import './style.css';
 import Modal from 'react-modal';
 
-
-// async function request(){
-//   const response = await fetch('http://192.249.18.245:8080/appliers/all',{
-//     method:"GET"
-//   })
-//   const data = await response.json();
-//   console.log(data);
-// }
 const styles = theme => ({
   root: {
     padding: theme.spacing(5),
@@ -25,7 +17,7 @@ const styles = theme => ({
     color: theme.palette.text.primary,
   },
 });
-function Applier({applier}){  
+function Applier({applier}){
     const [modalState, setModalState] = useState(false);
     const [comment, setComment] = useState('');
     const [pass,setPass] = useState(false);
@@ -50,6 +42,7 @@ function Applier({applier}){
           console.log(error)
         })
       }
+    
   return(
       <div className="applier">
           <Grid item xs={2}>
@@ -79,12 +72,10 @@ function Applier({applier}){
               onChange={passHandler}
             />
             </div>
-            
             <button className="submit" type="submit" >저장</button>
             </form>
         </Modal>
       </div>
-        
   )
 }
 function ApplierView(props){
