@@ -85,8 +85,8 @@ class ApplyPage extends Component{
               <Paper >
               <div  align="left" className="motiveq">6. 지원동기를 자유롭게 작성해주세요</div>
                 <textarea value={motive} name="motive"  onChange={this.changeHandler} className="motive-input" ></textarea>
-                <img className = 'submit' src = "/images/apply_button.png" height='50px' onClick={this.submitHandler}></img>
               </Paper>
+                <img className = 'submit' src = "/images/apply_button.png" height='50px' onClick={this.submitHandler}></img>
             </Grid>
             
             {/* <button className="submit" type="submit" >제출</button> */}
