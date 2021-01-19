@@ -19,6 +19,7 @@ class Events extends Component {
                 <View style={{flex: 1, flexDirection: 'row'}} >
                 <a target="_blank" href={this.props.facebook}>
                     <img className = 'poster'
+
                         src = {'http://192.249.18.245:8081/' + this.props.src}
                         onMouseOver={e => 
                             e.target.src = 'http://192.249.18.245:8081/' + this.props.src2
