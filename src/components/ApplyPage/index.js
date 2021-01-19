@@ -55,7 +55,7 @@ class ApplyPage extends Component{
             <Grid item xs={5} alignItems="center" justify="center">
               <div className="blank"></div>
               <Paper className="titlePaper" >
-                <div className="title">전산학부 학생회 지원서</div>
+                <div className="apply_title">전산학부 학생회 지원서</div>
               </Paper>
               <div className="blank1"></div>
               <Paper >
