@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# KAIST CS Student Committee
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+✔️ *전산학부 학생회 구성원으로서, 학우들이 각종 행사/혜택/공지들에 접근하기 불편해 하는 상*황을 해결하기 위해 *다음과 같은 기능들을 가진 웹사이트를 만들었다 (보완하여 실제 사용 계획 중)*
 
-## Available Scripts
+# Available Features
 
-In the project directory, you can run:
+📌 **메인 페이지**
 
-### `yarn start`
+- 학생회 사업 소개 :
+    - 마우스 움직임을 감지하여 db로부터 서로 다른 이미지를 불러옴
+    - 사진 클릭 시 해당 학생회 사업 페이스북 공지 링크로 이동, 3. 현재 날짜와 해당 사업의 진행기간을 비교하여 진행상황(진행완료, 진행중, 진행예정)을 색깔과 함께 표시함
+- 학생회 구성원 소개 : Router이용
+- 학생회 지원하기 :
+    - Router이용하여 페이지 이동
+    - 2. 주어진 형식에 지원자 정보 입력 후 제출 버튼 클릭시 db로 정보 전달
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+📌 **로그인**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Modal창 이용
+- 로그인 성공 시 방문자 mode에서 관리자 mode로 전환되도록 구현
+- mode에 따라 서로 다른 페이지 접근 권한 부여
 
-### `yarn test`
+📌 **관리자 페이지**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`사업 관리`
 
-### `yarn build`
+- 현재 등록된 사업들 리스트 확인 가능
+- 주어진 형식에 사업 정보 입력 후 제출 버튼 클릭 시 db로 정보 전달 및 메인 페이지에 추가됨
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`지원자 관리`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Grid 형식으로 현재 지원한 지원자들 표시(합불 여부에 따라 서로 다른 색상으로 지원자 이름 표시됨)
+- 지원자별 상세보기 클릭 시, Modal창을 통해 지원자가 작성해 제출했던 정보들 확인 가능
+- 추가로, Modal창에 지원자 평가 멘트, 합불 여부 입력해 저장 버튼 클릭 시 db에 저장됨
+- nodemailer 모듈을 사용해, 웹사이트 상에서 직접 지원자에게 합불 여부 메일 발송 가능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`로그아웃`
 
-### `yarn eject`
+- 로그아웃 클릭 시 관리자 mode에서 방문자 mode로 변경되며 메인 페이지로 이동
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Design
+**학생회 로고**
+Computer Science Student Counsil의 약자, CSSC를 바탕으로 KAIST 전산학부 학생회 로고를 비공식 제작하였다.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Related Works
+About Backend: https://github.com/nsy033/CS496_W3_backend
