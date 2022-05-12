@@ -43,4 +43,4 @@
 Computer Science Student Counsil의 약자, CSSC를 바탕으로 KAIST 전산학부 학생회 로고를 비공식 제작하였다.
 
 # Related Works
-About Backend: https://github.com/nsy033/CS496_W3_backend
+About Backend: https://github.com/greenina/KAIST_CS_server
